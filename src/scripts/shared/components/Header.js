@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { ViewStream } from './../Icons/icons.component';
 const header = () => {
   return (
     <header className='matchupHeader'>
@@ -7,7 +7,7 @@ const header = () => {
         <div className='row no-gutters'>
           <div className='col-3 headerNav'>
             <button className='navbar-toggler' type="button">
-              <i className="material-icons">view_stream</i>
+              <ViewStream></ViewStream>
             </button>
           </div>
           <div className='col-6 text-center headerLogo'>
