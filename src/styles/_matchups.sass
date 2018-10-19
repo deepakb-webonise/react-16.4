@@ -1,0 +1,93 @@
+.matchupWrap
+  .btn-group
+    display: flex
+    >
+      .btn
+        flex-grow: 1
+        min-width: 111px
+    .btn-secondary
+      background: transparent
+      color: $white
+      font-size: 12px
+      font-weight: 500
+      padding-top: 6px
+      padding-bottom: 6px
+      &:hover,
+      &:not(:disabled):not(.disabled).active,
+      &:not(:disabled):not(.disabled):active
+        background-color: $white
+        color:  $black
+      &:focus,
+      &:not(:disabled):not(.disabled).active:focus, 
+      &:not(:disabled):not(.disabled):active:focus,
+        box-shadow: 0 0 0 0 rgba(0,123,255,.25)
+  .searchFilter
+    margin-bottom: 10px
+    .matchupDate
+      font-size: 13px
+      font-weight: 500
+      display: flex
+      align-items: center
+
+.matchupFilter
+  margin-bottom: 15px
+
+.matchupBanner
+  background: url('/assets/images/banner.png') no-repeat center
+  margin-bottom: 15px
+  text-align: center
+  min-height: 152px
+  width: 100%
+  background-size: 345px
+
+.leagueFilter
+  margin-bottom: 15px
+  .leagueList
+    li
+      border: 1px solid #fff
+      border-radius: 50%
+      width: 50px
+      height: 50px
+      font-weight: 600
+      font-size: 12px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 4px
+      &.active
+        background-color: $white
+        color: $black
+      &:first-child
+        background-color: $white
+        color: $black
+
+.matchupItem
+  background-color: $white
+  border-radius: 8px
+  margin-bottom: 1px
+  padding: 5px
+  .matchDateTimeWrap
+    color: $greyish
+    padding: 0 5px
+    font-size: 12px
+    margin: 5px 0
+  .table
+    margin-bottom: 5px
+  .teamsTable
+    .boardNuber
+      font-weight: 500
+      color: $brownish-grey
+    .teamName
+      font-weight: 500
+      color: $black
+  .oddsTable
+    .tableCell
+      font-weight: 500
+      color: $brownish-grey
+      &.open,
+      &.current
+        width: 50%
+    .tableHead
+      .tableCell
+        color: $greyish
+        font-size: 12px
